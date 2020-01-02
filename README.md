@@ -1,3 +1,3 @@
-# minidotfiles2
+# minidotfiles
 
 Dotfiles for user accounts that are not mine, such as single purpouse ones in remote systems.
