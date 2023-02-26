@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2023 Aminda Suomalainen <suomalainen+git@mikaela.info>
+#
+# SPDX-License-Identifier: CC0-1.0
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 gpgconf --launch gpg-agent
 gpg-connect-agent updatestartuptty /bye >/dev/null 2>&1
