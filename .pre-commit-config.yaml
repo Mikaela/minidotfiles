@@ -2,6 +2,13 @@
 #
 # SPDX-License-Identifier: CC0-1.0
 # See https://pre-commit.com for more information
+
+ci:
+  # Forĝejo/Gitea mirrors will autoclose pull requests. This should decrease
+  # the frequency of unnecessary PRs.
+  # https://github.com/pre-commit-ci/issues/issues/83
+  autoupdate_schedule: quarterly
+
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.4.0
@@ -14,6 +21,9 @@ repos:
       - id: detect-private-key
       - id: end-of-file-fixer
       - id: fix-byte-order-marker
+      - id: trailing-whitespace
+        exclude: ^LICENSES\/.*|LICENSE$
+        exclude_types: [tsv, markdown]
   - repo: https://github.com/pre-commit/mirrors-prettier
     rev: "v3.0.0-alpha.9-for-vscode"
     hooks:
