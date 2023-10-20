@@ -56,6 +56,8 @@ repos:
         alias: ec
 
   - repo: https://github.com/fsfe/reuse-tool
-    rev: v2.1.0
+    # TODO / FIXME: use a tag here once one without default language releases
+    #rev: v2.1.0
+    rev: 0e64bdafd14fda4d0c859b3bda1ec61c1654dbcc
     hooks:
       - id: reuse
