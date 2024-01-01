@@ -39,12 +39,12 @@ repos:
       - id: check-pre-commit-ci-config
 
   - repo: https://github.com/pre-commit/mirrors-prettier
-    rev: "v3.0.3"
+    rev: "v4.0.0-alpha.8"
     hooks:
       - id: prettier
 
   - repo: https://github.com/scop/pre-commit-shfmt
-    rev: v3.7.0-1
+    rev: v3.7.0-4
     hooks:
       - id: shfmt
         #- id: shfmt-docker
@@ -58,6 +58,6 @@ repos:
   - repo: https://github.com/fsfe/reuse-tool
     # TODO / FIXME: use a tag here once one without default language releases
     #rev: v2.1.0
-    rev: 0e64bdafd14fda4d0c859b3bda1ec61c1654dbcc
+    rev: v2.1.0
     hooks:
       - id: reuse
