@@ -1,0 +1,18 @@
+# SPDX-FileCopyrightText: 2024 Aminda Suomalainen <suomalainen+git@mikaela.info>
+#
+# SPDX-License-Identifier: CC0-1.0
+
+# Ban dotfiles except
+.*
+!.editorconfig
+!.gitattributes
+!.gitignore
+!.gnupg
+!.pre-commit-config.yaml
+!.ssh
+# pre-commit
+node_modules/
+
+# symlinks, paws off
+gnupg
+ssh
