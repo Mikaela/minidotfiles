@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2023 Aminda Suomalainen <suomalainen+git@mikaela.info>
+# SPDX-FileCopyrightText: 2024 Aminda Suomalainen <suomalainen+git@mikaela.info>
 #
 # SPDX-License-Identifier: CC0-1.0
 # See https://pre-commit.com for more information
@@ -14,7 +14,7 @@ default_language_version:
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.5.0
+    rev: v4.6.0
     hooks:
       - id: check-added-large-files
       - id: check-case-conflict
@@ -38,13 +38,13 @@ repos:
     hooks:
       - id: check-pre-commit-ci-config
 
-  - repo: https://github.com/pre-commit/mirrors-prettier
-    rev: "v4.0.0-alpha.8"
+  - repo: https://github.com/rbubley/mirrors-prettier
+    rev: "v3.2.5"
     hooks:
       - id: prettier
 
   - repo: https://github.com/scop/pre-commit-shfmt
-    rev: v3.7.0-4
+    rev: v3.8.0-1
     hooks:
       - id: shfmt
         #- id: shfmt-docker
@@ -56,8 +56,6 @@ repos:
         alias: ec
 
   - repo: https://github.com/fsfe/reuse-tool
-    # TODO / FIXME: use a tag here once one without default language releases
-    #rev: v2.1.0
-    rev: v2.1.0
+    rev: v3.0.2
     hooks:
       - id: reuse
