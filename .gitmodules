@@ -1,0 +1,7 @@
+# SPDX-FileCopyrightText: 2024 Aminda Suomalainen <suomalainen+git@mikaela.info>
+#
+# SPDX-License-Identifier: CC0-1.0
+
+[submodule "submodules/shell-things"]
+	path = submodules/shell-things
+	url = https://gitea.blesmrt.net/Mikaela/shell-things.git

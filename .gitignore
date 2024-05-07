@@ -16,3 +16,6 @@ node_modules/
 # symlinks, paws off
 gnupg
 ssh
+resolv.conf-generate.bash
+systemd-resolv.conf-generate.bash
+systemd-resolv.conf-restore.bash

@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2023 Aminda Suomalainen <suomalainen+git@mikaela.info>
+# SPDX-FileCopyrightText: 2024 Aminda Suomalainen <suomalainen+git@mikaela.info>
 #
 # SPDX-License-Identifier: CC0-1.0
 
@@ -14,6 +14,8 @@ indent_size = tab
 
 [*.{markdown,md}]
 trim_trailing_whitespace = false
+indent_style = space
+indent_size = 2
 
 [*.{cff,yaml,yml}]
 indent_style = space
